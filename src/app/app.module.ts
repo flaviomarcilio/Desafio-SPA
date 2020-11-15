@@ -9,12 +9,14 @@ import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
-    CardComponent
+    CardComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

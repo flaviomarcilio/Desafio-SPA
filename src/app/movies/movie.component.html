@@ -25,7 +25,7 @@
             <td>{{ movie.titulo }}</td>
             <td>{{ movie.elenco[0] }}, {{ movie.elenco[1] }}, {{ movie.elenco[2] }}</td>
             <td>{{ movie.generos[0] }}, {{ movie.generos[1] }}</td>
-            <td>{{ movie.relevancia }}</td>
+            <td>{{ movie.relevancia | percent }}</td>
             <td>
                 <app-card [movie]="movie"></app-card>
             </td>
