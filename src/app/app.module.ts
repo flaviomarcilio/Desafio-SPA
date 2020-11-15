@@ -9,19 +9,19 @@ import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { Error404Component } from './error404/error404.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     CardComponent,
-    NavBarComponent,
     Error404Component
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
