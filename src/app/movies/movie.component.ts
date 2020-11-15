@@ -3,7 +3,6 @@ import { Movie } from './movie';
 import { MovieService } from './movie.service';
 
 @Component ({
-    selector: 'app-movie',
     templateUrl: './movie.component.html'
 })
 

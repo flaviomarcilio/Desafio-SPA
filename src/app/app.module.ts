@@ -10,13 +10,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RouterModule } from '@angular/router';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     CardComponent,
-    NavBarComponent
+    NavBarComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,18 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule.forRoot([
+      {
+        path: '', redirectTo: 'movies', pathMatch: 'full'
+      },
+      {
+        path: 'movies', component: MovieComponent
+      },
+      {
+        path: '**', component: Error404Component
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
