@@ -9,6 +9,10 @@ export class MovieService {
    
     retrieveAll(): Movie[] {
         return MOVIES;
+    }
+
+    retrieveById(id: number): Movie {
+        return MOVIES.find((movieInterator: Movie) => movieInterator.id === id);
     } 
 }
 

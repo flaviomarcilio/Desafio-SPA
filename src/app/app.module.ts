@@ -30,10 +30,13 @@ import { Error404Component } from './error404/error404.component';
     MatGridListModule,
     RouterModule.forRoot([
       {
-        path: '', redirectTo: 'movies', pathMatch: 'full'
+        path: 'movies', component: MovieComponent
       },
       {
-        path: 'movies', component: MovieComponent
+        path: 'movies/info/:id', component: CardComponent
+      },
+      {
+        path: '', redirectTo: 'movies', pathMatch: 'full'
       },
       {
         path: '**', component: Error404Component

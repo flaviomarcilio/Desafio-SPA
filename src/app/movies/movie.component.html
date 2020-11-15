@@ -27,7 +27,7 @@
             <td>{{ movie.generos[0] }}, {{ movie.generos[1] }}</td>
             <td>{{ movie.relevancia | percent }}</td>
             <td>
-                <app-card [movie]="movie"></app-card>
+                <a [routerLink]="['/movies/info', movie.id]" class="btn btn-primary mr-2">Detalhes</a>
             </td>
             <td></td>
         </tr>
