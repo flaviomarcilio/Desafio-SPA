@@ -22,7 +22,7 @@ import { ConstructionComponent } from './component/construction/construction.com
                 path: 'movies/info/:id', component: CardComponent
             },
             {
-                path: 'movies/construction', component: ConstructionComponent
+                path: 'construction', component: ConstructionComponent
             }
         ])
     ],
