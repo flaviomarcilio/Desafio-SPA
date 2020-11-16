@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { Error404Component } from './error404/error404.component';
 import { CoreModule } from './core/core.module';
 import { MovieModule } from './movies/movie.module';
-import { CardModule } from './card/card.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { CardModule } from './card/card.module';
   imports: [
     CoreModule,
     MovieModule,
-    CardModule,
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([

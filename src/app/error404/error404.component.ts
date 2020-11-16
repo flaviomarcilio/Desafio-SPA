@@ -4,6 +4,4 @@ import { Component } from "@angular/core";
     templateUrl: './error404.component.html'
 })
 
-export class Error404Component {
-
-}
+export class Error404Component { }

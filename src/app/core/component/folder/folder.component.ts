@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Movie } from '../../../movies/movie';
 import { MovieService } from '../../../movies/movie.service';
 
@@ -9,13 +10,12 @@ import { MovieService } from '../../../movies/movie.service';
 })
 export class FolderComponent implements OnInit {
 
-  constructor(private movieService: MovieService) { }
+  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService) { }
 
   movie: Movie;
 
   ngOnInit(): void {
     this.movie = this.movieService.retrieveById(1);
-
   }
 
 }
