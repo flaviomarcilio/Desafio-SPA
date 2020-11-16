@@ -3,8 +3,8 @@
         <h3 class="titulo">{{ movie.titulo }}</h3>
         <p class="descricao">{{ movie.sinopse }}</p>
         <div class="botoes">
-            <button role="button" class="botao">
-                <i class="fas fa-play"></i>
+            <button [routerLink]="['/movies/construction']" class="botao">
+                <a class="fas fa-play"></a>
                 ASSISTIR AGORA
             </button>
             <button [routerLink]="['/movies/info', movie.id]" class="botao">
