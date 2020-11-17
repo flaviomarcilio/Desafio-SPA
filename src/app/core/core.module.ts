@@ -22,6 +22,9 @@ import { ConstructionComponent } from './component/construction/construction.com
                 path: 'movies/info/:id', component: CardComponent
             },
             {
+                path: 'movies/:id', component: FolderComponent
+            },
+            {
                 path: 'construction', component: ConstructionComponent
             }
         ])

@@ -15,7 +15,7 @@ export class FolderComponent implements OnInit {
   movie: Movie;
 
   ngOnInit(): void {
-    this.movie = this.movieService.retrieveById(1);
+    this.movie = this.movieService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id'));
   }
 
 }

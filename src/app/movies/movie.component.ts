@@ -11,22 +11,22 @@ export class MovieComponent implements OnInit {
     filteredMovies: Movie[] = [];
 
     _movies: Movie[] = [];
-    _filterBy: string;
+    // _filterBy: number;
 
-    constructor(private movieService: MovieService ) {}
+    constructor(private movieService: MovieService) {}
 
     ngOnInit(): void {
         this._movies = this.movieService.retrieveAll();
         this.filteredMovies = this._movies;
     }
 
-    set filter(value: string) {
+    /* set filter(value: number) {
         this._filterBy = value;
-        this.filteredMovies = this._movies.filter((movie: Movie) => movie.titulo.toLocaleLowerCase().indexOf(this._filterBy.toLocaleLowerCase()) > -1);
+        this.filteredMovies = this._movies.filter((movie: Movie) => movie.id === this._filterBy);
     }
 
     get filter() {
         return this._filterBy;
-    }
+    } */
 
 }
