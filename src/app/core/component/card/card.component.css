@@ -1,3 +1,43 @@
 .movie-card {
     max-width: 400px;
 }
+
+section {
+    display: table;
+}
+
+.card-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.card-button-row {
+    display: table-cell;
+    width: 400px;
+}
+
+.card-button-row .mat-button-base {
+    margin: 5px 5px 5px 0;
+}
+
+.card-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: white;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}

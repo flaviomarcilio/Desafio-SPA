@@ -5,8 +5,35 @@
         {{ movie.sinopse }}
       </p>
     </mat-card-content>
-    <mat-card-actions>
+    <!-- <mat-card-actions>
       <button [routerLink]="['//construction']" mat-button>LIKE</button>
       <button [routerLink]="['//construction']" mat-button>SHARE</button>
     </mat-card-actions>
+    <app-icon name="play_arrow"></app-icon> -->
+    <section>
+      <div class="card-button-row">
+        <div class="card-flex-container">
+          <div class="card-button-container">
+            <button mat-fab aria-label="play icon" class="botao">
+              <app-icon name="play_arrow"></app-icon>
+            </button>
+          </div>
+          <div class="card-button-container">
+            <button mat-fab aria-label="add icon" class="botao">
+              <app-icon name="add"></app-icon>
+            </button>
+          </div>
+          <div class="card-button-container">
+            <button mat-fab aria-label="thumb_up icon" class="botao">
+              <app-icon name="thumb_up_alt"></app-icon>
+            </button>
+          </div>
+          <div class="card-button-container">
+            <button mat-fab aria-label="thumb_down icon" class="botao">
+              <app-icon name="thumb_down_alt"></app-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 </mat-card>  

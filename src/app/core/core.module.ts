@@ -5,17 +5,21 @@ import { FolderComponent } from './component/folder/folder.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { ConstructionComponent } from './component/construction/construction.component';
+import { IconComponent } from './component/icon/icon.component';
 
 @NgModule({
     declarations: [
         CardComponent,
         NavBarComponent,
         FolderComponent,
+        IconComponent,
         ConstructionComponent
     ],
     imports: [
         MatCardModule,
+        MatIconModule,
         MatButtonModule,
         RouterModule.forChild([
             {
