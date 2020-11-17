@@ -71,5 +71,16 @@ var MOVIES: Movie[] = [
         generos: ['Crime', 'Drama'],
         relevancia: 0.75,
         ano: 2020
+    },
+    {
+        id: 6,
+        titulo: 'Batman: Morte em Família',
+        imageUrl: '/assets/images/Batman.jpg',
+        folderUrl: '/assets/images/folders/Batman.jpg',
+        sinopse: 'Baseado na HQ “Batman: Morte em Família”, o longa conta a história da relação do Batman com seu pupilo Jason Todd, o segundo Robin. Após a relação entre os dois ficar abalada por conta do comportamento extremo de Jason em suas rondas, o Coringa o mata, levando o Batman ao limite.',
+        elenco: ['Bruce Greenwood', 'Vincent Martella', 'John DiMaggio', 'Zehra Fazal'],
+        generos: ['Animação', 'Ação'],
+        relevancia: 0.81,
+        ano: 2020
     }
 ]
