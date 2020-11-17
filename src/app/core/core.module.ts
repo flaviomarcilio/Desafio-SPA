@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { ConstructionComponent } from './component/construction/construction.component';
 import { IconComponent } from './component/icon/icon.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { IconComponent } from './component/icon/icon.component';
         MatCardModule,
         MatIconModule,
         MatButtonModule,
+        MatTooltipModule,
         RouterModule.forChild([
             {
                 path: 'movies/info/:id', component: CardComponent
